@@ -1,0 +1,12 @@
+.container{
+ background:cyan;
+  width:auto;
+  height:830px;
+  border:solid red;
+}
+ol{
+   width:auto;
+  height:750px;
+  border:none;
+  background:#ccf2ff
+}
