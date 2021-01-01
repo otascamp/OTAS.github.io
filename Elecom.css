@@ -1,0 +1,37 @@
+.cb
+{
+  border: solid black;
+  border-radius: 10px;
+  width : auto;
+  height: auto;
+  text-align: center;
+  background-color: #CADBDB;
+  padding: 10px;
+}
+.olr
+{
+  border: solid black;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color: #CADBDB;
+  text-align: center;
+  padding: 10px;
+}
+.mc
+{
+  padding: 10px;
+  border: solid black;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color:#CADBDB;
+  text-align: center;
+}
+.head
+{
+  border: none;
+  background-color: grey;
+  height : auto;
+  padding: 10px;
+}
