@@ -1,0 +1,41 @@
+div.container
+{
+  width:800px;
+  height:;
+  border :none;
+  
+}
+header
+{
+  border: none;
+  background-color:#00ccff;
+  width: 800px;
+  height: 100px;
+  clear: center;
+  padding: 20px;
+
+}
+nav
+{
+  float:right;
+  border:solid gray;
+  max-width:300px;
+  height:auto;
+  padding:10px;
+  border-radius:10px;
+}
+
+article
+{
+  padding:10px;
+  
+}
+footer
+{
+  text-align: center;
+border:solid #00ccff 20px;
+  border-radius: 20px;
+  background-color: white;
+  height: auto;
+  width: 800px;
+}
