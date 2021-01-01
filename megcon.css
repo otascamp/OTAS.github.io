@@ -1,0 +1,18 @@
+.cb
+{
+  width :auto;
+  height: auto;
+  text-align: justify;
+  background-color: #BCE8E8;
+  
+}
+.mchead
+{
+  text-align: center;
+  background-color: #298585;
+  height: auto;
+  width: auto;
+  padding 30px;
+  border : 10px;
+  
+}
