@@ -1,12 +1,19 @@
 .container{
  background:cyan;
   width:auto;
-  height:830px;
+  height:auto;
   border:solid red;
 }
 ol{
    width:auto;
-  height:750px;
+  height:auto;
   border:none;
   background:#ccf2ff
+}
+footer{
+  padding:5px;
+  width:auto;
+  height:auto;
+  border:none;
+  font-style:italic;
 }
