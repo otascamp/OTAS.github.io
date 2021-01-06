@@ -4,7 +4,7 @@
   height:auto;
   border:solid red;
 }
-ol{
+nav{
    width:auto;
   height:auto;
   border:none;
@@ -17,3 +17,86 @@ footer{
   border:none;
   font-style:italic;
 }
+
+.menu ul, .menu li{
+  margin:0;
+  padding:0;
+}
+.menu ul{ /*not use */
+  background:none;
+  width:200px;
+}
+.menu li{ /*not use*/
+  float:center;
+  position:relative;
+  width:auto;
+}
+.menu a{
+  color: red;
+  display:block;
+  font:bold 15px/20px sans-itself;
+  padding:15px 22px;
+  text-align:left;
+	text-decoration: none;
+	
+}
+.menu li:hover a{
+  background:gold;
+  
+}
+#submenu, #sabmenu, #sibmenu, #scbmenu{
+  list-style:none;
+  position:absolute;
+	visibility: hidden;
+	z-index: 1;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top:0px;
+  left:100px;
+  visibility:visible;
+}
+#submenu li, #sabmenu li, #sibmenu li, #scbmenu li{
+	float: center;
+  position:relative;
+	width: auto;
+}
+#submenu a:hover {
+	background:#f5ea56;
+}
+#sabmenu a:hover {
+	background:#f5ea56;
+}
+#sibmenu a:hover {
+	background:#f5ea56;
+}
+#scbmenu a:hover {
+	background:#f5ea56;
+}
+#submenu a, #sabmenu a,#sibmenu a, #scbmenu a{
+	background-color:#3c048a;
+  color:#ffffff;
+  display:block;
+  padding:15px 10px;
+}
+
+li:hover ul#sabmenu {
+	opacity: 1;
+	top:-300px;
+  left:100px;
+  visibility:visible;
+}
+
+li:hover ul#sibmenu {
+	opacity: 1;
+	top:-250px;
+  left:100px;
+  visibility:visible;
+}
+li:hover ul#scbmenu {
+	opacity: 1;
+	top:-200px;
+  left:100px;
+  visibility:visible;
+}
+
