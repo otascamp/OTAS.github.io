@@ -1,30 +1,11 @@
-.container{
- background:cyan;
-  width:auto;
-  height:auto;
-  border:solid red;
-}
-nav{
-   width:auto;
-  height:auto;
-  border:none;
-  background:#ccf2ff
-}
-footer{
-  padding:5px;
-  width:auto;
-  height:auto;
-  border:none;
-  font-style:italic;
-}
+
 
 .menu ul, .menu li{
   margin:0;
   padding:0;
 }
-.menu ul{ /*not use */
+.menu ul{
   background:none;
-  width:200px;
 }
 .menu li{ /*not use*/
   float:center;
@@ -32,7 +13,6 @@ footer{
   width:auto;
 }
 .menu a{
-  color: red;
   display:block;
   font:bold 15px/20px sans-itself;
   padding:15px 22px;
@@ -41,14 +21,15 @@ footer{
 	
 }
 .menu li:hover a{
-  background:gold;
+  background:#f0e9e9;
   
 }
-#submenu, #sabmenu, #sibmenu, #scbmenu, #d8menu, #d9menu{
+#submenu, #sabmenu, #sibmenu, #scbmenu, #d7menu, #d9menu{
   list-style:none;
   position:absolute;
 	visibility: hidden;
 	z-index: 1;
+  border:2px solid #cacce3;
 }
 li:hover ul#submenu {
 	opacity: 1;
@@ -56,46 +37,52 @@ li:hover ul#submenu {
   left:180px;
   visibility:visible;
 }
-#submenu li, #sabmenu li, #sibmenu li, #scbmenu li, #d8menu li, #d9menu li{
+#submenu li, #sabmenu li, #sibmenu li, #scbmenu li, #d7menu li, #d9menu li{
 	float: center;
   position:relative;
 	width: auto;
 }
 #submenu a:hover {
-	background:#f5ea56;
+	background:white;
+  border:1px solid blue;
 }
 #sabmenu a:hover {
-	background:#f5ea56;
+	background:white;
+  border:1px solid blue;
 }
 #sibmenu a:hover {
-	background:#f5ea56;
+	background:white;
+  border:1px solid blue;
 }
 #scbmenu a:hover {
-	background:#f5ea56;
+	background:white;
+  border:1px solid blue;
 }
-#d8menu a:hover {
-	background:#f5ea56;
+#d7menu a:hover {
+	background:white;
+  border:1px solid blue;
 }
 #d9menu a:hover {
-	background:#f5ea56;
+	background:white;
+  border:1px solid blue;
 }
-#submenu a, #sabmenu a,#sibmenu a, #scbmenu a, #d8menu a, #d9menu a{
-	background-color:#3c048a;
-  color:#ffffff;
+#submenu a, #sabmenu a,#sibmenu a, #scbmenu a, #d7menu a, #d9menu a{
+  background:;
+  color:#636fdb;
   display:block;
-  padding:15px 10px;
+  padding:15px 50px;
 }
 
 li:hover ul#sabmenu {
 	opacity: 1;
-	top:-300px;
+	top:-306px;
   left:180px;
   visibility:visible;
 }
 
 li:hover ul#sibmenu {
 	opacity: 1;
-	top:-250px;
+	top:-255px;
   left:180px;
   visibility:visible;
 }
@@ -106,16 +93,16 @@ li:hover ul#scbmenu {
   visibility:visible;
 }
 
-li:hover ul#d8menu {
+li:hover ul#d7menu {
 	opacity: 1;
-	top:-200px;
+	top:-204px;
   left:180px;
   visibility:visible;
 }
 
 li:hover ul#d9menu {
 	opacity: 1;
-	top:-200px;
+	top:-204px;
   left:180px;
   visibility:visible;
 }
