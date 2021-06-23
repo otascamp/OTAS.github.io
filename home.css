@@ -18,32 +18,37 @@
 nav{
   width: 300px;
   height: 330px;
-  position: absolute;
-  margin-left: 76%;
+  /*position: absolute;
+  margin-left: 76%;*/
+  float: right;
 }
 nav h2{
   line-height: 60px;
 }
 nav ul{
   list-style: none;
+  margin:0;
+  /*padding: 0;*/
 }
 
 nav ul li{
   width: 250px;
   text-align: center;
   background-color: green;
-  line-height: 65px;
-  border: 2px solid black;
+  line-height: 50px;
+  /*border: 2px solid black;*/
   border-radius: 5px;
   border-bottom: none;
   /*margin-left: 5px;*/
   /*position: absolute;*/
   transition: padding 1s,background-color 0.5s;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 3px red,0 1px 2px red;
 }
 
-nav ul li:last-of-type{
+/*nav ul li:last-of-type{
   border-bottom: 2px solid black;
-}
+}*/
 
 nav ul li a{
   text-decoration: none;
@@ -53,7 +58,7 @@ nav ul li a{
 
 nav ul li:hover{
   background-color: #27f507;
-  padding: 5px;
+  padding: 2px;
 }
 
 .center{
