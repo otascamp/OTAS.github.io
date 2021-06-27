@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Editor</title>
+	<link rel="stylesheet" type="text/css" href="css/myproject2.css">
+</head>
+<body>
+
+<!-- <div class="container"> -->
+
+	<!--Screen-->
+	<div class="mainscreen" align="center">
+	<div>
+		<p id="result">Hello</p>
+	</div>
+
+	<!--Set text in screen-->
+
+	<div class="text">
+		<input class="text" type="text" name="text" id="setText" placeholder="Type Content" onchange="textBtn()"> 
+		<button id="tbtn" onclick="textBtn()" >Set Text</button>
+	</div>
+
+
+	<!--Set color of the text in screen-->
+
+	<div>
+		<input type="color" name="color" id="setColor"> 
+		<button id="cbtn" onclick="colorBtn()">Set Color</button>
+	</div>
+
+
+	<!--Set the size of the font in screen-->
+
+	<div class="number">
+		<input type="number" name="text" id="size" placeholder="Set Number"> 
+		<button id="sbtn" onclick="sizeBtn()" >Set Font Size</button>
+	</div>
+
+	<div class="case">
+
+	<input type="radio" name="case" id="upper" class="upper" onchange="upp()" value="0"><label for="upper">Uppercase</label>
+
+	<input type="radio" name="case" id="lower" class="lower" onchange="low()" value="1"><label for="lower">Lowercase</label>
+	<div>
+
+	</div>
+<!-- </div> -->
+
+	<script type="text/javascript">
+		function textBtn(){
+			let x = document.querySelector("#setText").value;
+			document.querySelector("#result").innerHTML = x;
+			console.log("This is set text button");
+		}
+
+
+		function colorBtn(){
+
+			let y = document.getElementById("setColor").value;
+			document.getElementById("result").style.color = y;
+			console.log("This is set color button");
+		}
+
+		function sizeBtn(){
+
+			let z = document.querySelector("#size").value;
+			document.querySelector("#result").style.fontSize = z+"px";
+			console.log("This is size set button")
+		}
+
+		function upp(){
+			let uppcase = document.querySelector("#setText");
+			console.log(uppcase.value);
+			console.log(document.getElementById("upper").value);
+
+			switch(document.getElementById("upper").value){
+				case "0":
+				uppcase.value = uppcase.value.toUpperCase();
+				// console.log(uppcase.value);
+				document.querySelector("#result").innerHTML = uppcase.value;				
+				break;
+			}
+		}
+
+		function low(){
+			let lowcase = document.querySelector("#setText");
+			console.log(lowcase.value);
+			console.log(document.getElementById("lower").value);
+
+			switch(document.getElementById("lower").value){
+				case "1":
+				lowcase.value = lowcase.value.toLowerCase();
+				// console.log(lowcase.value);
+				document.querySelector("#result").innerHTML = lowcase.value;				
+				break;
+			}
+		}
+
+	</script>
+
+
+</body>
+</html>
+<!-- © 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+ -->
