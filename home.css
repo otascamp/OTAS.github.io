@@ -4,6 +4,8 @@
 body{
   background-image: url(https://sitegroover.com/wp-content/uploads/2020/05/web-design-and-web-development-background.jpg);
 }
+
+/*----------------------------------------------------------------------------------------------------------------*/
 .up{
   width: 1350px;
   height: 100px;
@@ -18,12 +20,17 @@ body{
   color: #f28d3a;
   text-shadow: 2px 2px 2px yellow;
 }
+/*------------------------------------------------------------------------------------------------------------*/
+
+/*for link menu*/
+
 nav{
   width: 300px;
   height: 330px;
   /*position: absolute;
   margin-left: 76%;*/
   float: right;
+  /*z-index: -1;*/
 }
 nav h2{
   line-height: 60px;
@@ -37,45 +44,74 @@ nav ul{
 nav ul li{
   width: 250px;
   text-align: center;
-  background-color: green;
   line-height: 50px;
-  /*border: 2px solid black;*/
   border-radius: 5px;
   border-bottom: none;
-  /*margin-left: 5px;*/
-  /*position: absolute;*/
   transition: padding 1s,background-color 0.5s;
   margin-bottom: 5px;
   box-shadow: 0 1px 3px red,0 1px 2px red;
-}
+  position: relative;
+  /*z-index: 1;*/
 
-/*nav ul li:last-of-type{
-  border-bottom: 2px solid black;
-}*/
+  overflow: hidden;
+}
 
 nav ul li a{
   text-decoration: none;
-  color: white;
+  color: darkblue;
   font-size: 18px;
+  /*z-index: 2;*/
+
+  transition: all 1s;
+}
+
+nav ul li::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+  z-index: -2;
+
+  transition: all 1s;
+}
+
+nav ul li a:hover{
+  color: white;
 }
 
 nav ul li:hover{
-  background-color: #27f507;
+  /*background-color: #27f507;*/
   padding: 2px;
+
 }
+
+nav ul li:hover::before{
+  transform:rotate(0deg);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
 
 .center{
   width:1350px;
   height: 350px;
-  /*border: solid red 2px;*/
-  background: linear-gradient(rgb(238, 250, 12, 0.8),rgb(250, 158, 12, 0.8));
+  border: solid red 2px;
+  background: linear-gradient(rgb(238, 250, 12, 0.5),rgb(250, 158, 12, 0.5));
+  /*z-index: -2;*/
 }
 
 .center pre{
-  color: rgb(12, 64, 250, 1);
+  color: /*rgb(12, 64, 250, 1)*/ darkblue;
   font-family: Arial;
   font-size: 20px;
+  text-shadow: 0px 0px 2px red;
 }
+
+/*---------------------------------------------------------------------------------------------------------------*/
 
 .buttom{
   width: 1340px;
@@ -91,14 +127,12 @@ nav ul li:hover{
   letter-spacing: 5px;
   text-shadow: 5px 5px 5px darkblue;
 }
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+/*for Copy Right*/
 small{
   padding: 5px;
   color: gray;
 }
 
-/*@media(max-width: 600px){
-  pre{
-    color: black;
-  }
-}
-*/
