@@ -1,131 +1,282 @@
 *{
-  margin: 0;
+	margin: 0;
 }
 body{
-  background-image: url(https://sitegroover.com/wp-content/uploads/2020/05/web-design-and-web-development-background.jpg);
+	background: linear-gradient(#0b0340,blue,#0b0340);
 }
 
-/*----------------------------------------------------------------------------------------------------------------*/
+/*for  main menu*/
+
+.menubar ul{
+	list-style: none;
+}
+
+.menubar ul li{
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	letter-spacing: 5px;
+	display: inline;
+	padding: 20px 40px;
+	float: right;
+}
+
+.menubar ul li a{
+	text-decoration: none;
+	color: white;
+
+	transition: all 1s;
+}
+
+.menubar ul li a:hover{
+	width: 100%;
+	height:100%;
+	background-color: white;
+	color: black;
+	padding: 10px 10px;
+	border-radius: 20px;
+}
+.login{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	padding: 20px 20px;
+	position: absolute;
+	letter-spacing: 5px;
+	transition: all 1s;
+}
+
+/*for Login Form*/
+
+.loginform{
+	width: 250px;
+	height: 300px;
+	margin-top: 100px;
+	/*display: flex;*/
+	display: none;
+}
+
+.form{
+	margin-top: 80px;
+	/*display: hidden*/
+}
+
+.loginform label{
+	display: block;
+	color: white;
+	margin-bottom:10px;
+	margin-left: 10px;
+}
+
+.loginform input{
+	width: 200px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	border: none;
+	background-color: inherit;
+	border-bottom: 2px solid black;
+}
+
+.loginform input:focus{
+	outline: none;
+}
+
+.loginform button{
+	margin-left: 10px;
+	color: darkblue;
+	padding: 5px;
+}
+
+
+/*for welcome*/
+.header{
+	width: 100%;
+	height: 600px;
+	/*background-color: red;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+h3{
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	position: absolute;
+	text-shadow: 5px 5px 5px black;	
+
+}
+
+.circle{
+	width: 300px;
+	height: 300px;
+	/*border: 5px solid blue;*/
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: -1;
+}
+
+.inside{
+	width: 180px;
+	height: 10px;
+	/*background-color: red;*/
+	display: block;
+	position: absolute;
+	left: -30px;
+
+	animation-name: myrotate;
+	animation-duration: 10s;
+	transform-origin: right center;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.inside2{
+	width: 10px;
+	height: 10px;
+	background-color: yellow;
+	display: block;
+}
+
+@keyframes myrotate{
+	from{
+		transform: rotate(360deg);
+	}to{
+		transform: rotate(0deg);
+	}
+}
+
+
+
+/*This is for title 1*/
+
 .up{
-  width: 1350px;
+  width: 100%;
   height: 100px;
-  background-color: rgb(0,0,0,0.3);
+  background-/*color*/: rgb(0,0,0,0.3);
   display: flex;
   justify-content: center;
   align-items: center;
+  /*margin-top: -100px;*/
 }
 
 .up h1{
-  text-align: center;
-  color: #f28d3a;
-  text-shadow: 2px 2px 2px yellow;
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
 }
-/*------------------------------------------------------------------------------------------------------------*/
 
 /*for link menu*/
 
-nav{
-  width: 300px;
-  height: 330px;
-  /*position: absolute;
-  margin-left: 76%;*/
-  float: right;
-  /*z-index: -1;*/
-}
-nav h2{
-  line-height: 60px;
-}
-nav ul{
-  list-style: none;
-  margin:0;
-  /*padding: 0;*/
-}
-
-nav ul li{
-  width: 250px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 5px;
-  border-bottom: none;
-  transition: padding 1s,background-color 0.5s;
-  margin-bottom: 5px;
-  box-shadow: 0 1px 3px red,0 1px 2px red;
-  position: relative;
-  /*z-index: 1;*/
-
-  overflow: hidden;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: darkblue;
-  font-size: 18px;
-  /*z-index: 2;*/
-
-  transition: all 1s;
-}
-
-nav ul li::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotate(90deg);
-  transform-origin: right bottom;
-  z-index: -2;
-
-  transition: all 1s;
-}
-
-nav ul li a:hover{
-  color: white;
-}
-
-nav ul li:hover{
-  /*background-color: #27f507;*/
-  padding: 2px;
-
-}
-
-nav ul li:hover::before{
-  transform:rotate(0deg);
-}
-
-/*-----------------------------------------------------------------------------------------------------------*/
-
 .center{
-  width:1350px;
+  width:100%;
   height: 350px;
-  border: solid red 2px;
-  background: linear-gradient(rgb(238, 250, 12, 0.5),rgb(250, 158, 12, 0.5));
-  /*z-index: -2;*/
+  position: relative;
 }
 
 .center pre{
-  color: /*rgb(12, 64, 250, 1)*/ darkblue;
+  color:white;
   font-family: Arial;
   font-size: 20px;
   text-shadow: 0px 0px 2px red;
+  margin-top: 30px;
 }
 
-/*---------------------------------------------------------------------------------------------------------------*/
+/*for nav */
+
+nav{
+	right: 50px;
+	/*margin-left: -20px;*/
+	position: absolute;
+	border-left: 5px solid white;
+}
+
+/*nav h2{
+	color: #f79f07;
+	padding: 10px;
+	margin-bottom: 20px;
+}*/
+
+nav ul{
+	list-style: none;
+}
+nav ul li{
+	width: 250px;
+	height: auto;
+	text-align: center;
+	/*background-color: red;*/
+	padding: 20px 10px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+}
+nav ul li a{
+
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+nav ul li::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 20px;
+
+	position: absolute;
+	top: 0%;
+	left: 0%;
+
+	transform: translateY(100%);
+	z-index: -1;
+	transition: all 0.5s;
+}
+
+nav ul li a:hover{
+	color: darkblue;
+	font-weight: 700;
+}
+
+nav ul li:hover::before{
+	transform: translateY(0%);
+}
+
+nav ul li:hover a{
+	color: darkblue;
+}
+
+
+
+/*---------------------------------------------------
+------------------------------------------------------------*/
 
 .buttom{
-  width: 1340px;
+  width: 100%;
   height: 100px;
   /*background-color: #20f1f5;*/
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid rgb(251, 119, 20, 0.5);
+  /*border: 5px solid rgb(251, 119, 20, 0.5);*/
 }
-.buttom h3{
-  color: rgb(12, 250, 183, 1);
-  letter-spacing: 5px;
-  text-shadow: 5px 5px 5px darkblue;
+.buttom a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	width: 60px;
+	text-align: center;
+	border: 1px solid white;
+
+	transition: all 0.3s;
+}
+
+.buttom a:hover{
+	background-color: white;
+	color: #0b0340;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
@@ -135,4 +286,3 @@ small{
   padding: 5px;
   color: gray;
 }
-
