@@ -96,8 +96,11 @@
 
 		let login = document.getElementById("loginform");
 		// console.log(login);
-			// console.log("help");
-			login.style.display = "flex";
+		if(login.style.display === "none"){
+				login.style.display = "flex";
+			}else{
+				login.style.display = "none";
+			}
 		}
 	</script>
 </body>
