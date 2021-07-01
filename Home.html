@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>OTAS CAMP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-  <link rel="stylesheet" type="text/css" href="all.min.css">
-  <link rel="stylesheet" type="text/css" href="home.css">
+	<title>Template 1</title>
+	<link rel="stylesheet" type="text/css" href="css/template1.css">
 </head>
 <body>
-  <div class="up">
+	<div id="home" class="menubar">
+
+		<ul class="menu">
+			<a href="#" class="login" onclick="logg()">LOG IN</a>
+			<li><a href="#">Title 1</a></li>
+			<li><a href="#">Title 1</a></li>
+			<li><a href="#">Title 1</a></li>
+			<li><a href="#otas">OTAS</a></li>
+		</ul>
+	</div>
+
+	<!-- log in form -->
+
+	<div id="loginform" class="loginform">
+		<div class="form">
+				<form>
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" class="name">
+
+					<label for="phone">Phone</label>
+					<input type="text" name="phone" id="phone" class="phone">
+
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="email">
+
+					<button type="submit" id="btn" class="btn">Log In</button>
+				</form>
+			</div>
+	</div>
+
+	<!-- main header -->
+
+	<div class="header">
+	<h3>Welcome My Project</h3>
+	<div class="circle">
+		<div class="inside">
+			<div class="inside2"></div>
+		</div>
+	</div>
+	</div>
+
+<!-- This is for title 1 iink content-->
+	<div class="title1">
+		<div class="up">
       <h1><i>OTAS</i> PLC Training Camp</h1>
   </div>
 
-  <div class="center">
+  <div id="otas" class="center" >
 
     <nav>
-      <h2 align="center">Link Menu</h2>
     <ul>
       <li><a href="plcvid.html" target="_blank">PLC Training Vedio </a></li>
       <li><a href="Elecom.html" target="_blank">Components Explanation</a></li>
       <li><a href="reminder.html" target="_blank">Reminder</a></li>
-      <li><a href="myproject2.html" target="_blank">4</a></li>
+      <li><a href="#" target="_blank">4</a></li>
       
     </ul>
     </nav>
 
-    <pre><b>OTAS training camp</b>မှကြိုဆိုပါတယ်<br>
-      ဒီ<b>camp</b>လေးဟာ ခုဆရာရဲ၀င်းအောင် ဖွင့်လှစ်ထားတဲ့ <b>Mitsubishi PLC course</b> ကိုလေ့လာရာမှာ ပိုပြီးလွယ်ကူအဆင်ပြေအောင်
-      ကူညီပေးဖို့ရည်ရွယ်ပါတယ်
-      Groupထဲမှာ တင်ထားတဲ့videoတွေကို အစီအစဉ်တကျနဲ့ လေ့လာနိုင်အောင်
-      ပြီးတော့ သုံးထားတဲ့ <b>Electrical components</b>တွေတစ်ခုချင်းစီအကြောင်း လွယ်ကူစွာလေ့လာနိုင်အောင် သိသမျှလေး ဖန်တီးပေး
-      ထားတာပါ<br>
-      အကျိုးနည်းနည်းလေးပဲဖြစ်ဖြစ် ပြုနိုင်မယ်လို့ ယုံကြည်ပါတယ်</pre>
+    <pre>
+ Welcome to OTAS training camp
+
+      This camp makes it easier to study the Mitsubishi PLC course now open by Ye Win Aung.
+      Intended to help
+      Organize your group videos
+      And make it easy to learn about each of the electrical components you use
+      It is
+
+      We believe we can do it with little or no benefit</pre>
     
   </div>
 
 
   <div class="buttom">
-    <h3>တစ်နေ့တစ်လံ ပုဂံရောက်မှာပဲ သားကြီးတို့</h3>
+    <!-- <h3>တစ်နေ့တစ်လံ ပုဂံရောက်မှာပဲ သားကြီးတို့</h3> -->
+    <a href="#home">previous</a>
+    <a href="#">next</a>
   </div>
 <div align="center">
-  <small><i class="fas fa-copyright"></i>Copyright : Aao,Thant Sin Oo</small>
+  <small><i class="fas fa-copyright"></i>opyright : Aao,Thant Sin Oo</small>
 </div>
+	</div>
+
+	<!-- js -->
+
+	<script type="text/javascript">
+
+		function logg() {
+
+		let login = document.getElementById("loginform");
+		// console.log(login);
+			// console.log("help");
+			login.style.display = "flex";
+		}
+	</script>
 </body>
 </html>
